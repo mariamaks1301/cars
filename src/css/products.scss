@@ -1,0 +1,67 @@
+.products{
+    padding: 0 0 91px;
+    &__title{
+        @include text ($museo700, 35px, 96.5%, #0F0F10);
+        margin-bottom: 70px;
+    }
+    &__card{
+        width: 100%;
+
+        &-img{
+            width: 100%;
+
+        }
+        &-title{
+            @include text ($museo700, 20px, 96.5%, #0F0F10);
+            margin: 40px 0 12px;
+
+        }
+        &-desc{
+            @include text ($museo300, 15px, 18px, #0F0F10);
+
+        }
+    }
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+    padding: 0 29px;
+    
+  }
+  .swiper img{
+    width: 100%;
+  }
+
+  .swiper-slide {
+
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+
+  .swiper-button-next, .swiper-button-prev {
+    color: red;
+    
+  }
+  .swiper-button-next{
+    right: 0;
+  }
+
+  .swiper-button-prev{
+    left: 0;
+  }
+
+ 

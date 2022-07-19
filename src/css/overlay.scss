@@ -1,0 +1,121 @@
+.overlay{
+    width: 100%;
+    height: 100vh;
+    background: #00000080;
+    padding: 0 50px;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    display: none;
+}
+.popup{
+    
+    background: #fff;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    &__close{
+        position: absolute;
+        top: 7px;
+        right: 17px;
+        cursor: pointer;
+    }
+
+    &__call{
+        width: 952px;
+        // width: 100%;
+
+        display: flex;
+    }
+    &__img{
+        width: 50%;
+    }
+    &__form{
+        width: 50%;
+        padding: 80px;
+        &-title{
+            @include text ($museo700, 25px, 96.5%, #0F0F10);
+            white-space: nowrap;
+            text-align: center;
+
+        }
+        &-subtitle{
+            @include text ($museo300, 13px, 15px, #0F0F10);
+            margin: 4px 0 40px;
+            text-align: center;
+
+        }
+        &-input{
+            &:first-child{
+                margin-top: 40px;
+            }
+            &:invalid{
+                border: 1px solid #E31E24;
+            }
+            background: #FFFFFF;
+            box-shadow: 0px 5px 48px rgba(49, 47, 47, 0.1);
+            border-radius: 43px;
+            border: none;
+            width: 100%;
+            height: 52px;
+            padding-left: 32px;
+            margin-bottom: 15px;
+            outline: none;
+            &::placeholder{
+                @include text ($museo300, 15px, 18px, #E31E24);
+            }
+        }
+        &-lable{
+            display: flex;
+            align-items: center;
+            column-gap: 4px;
+            white-space: nowrap;
+            margin-bottom: 15px;
+            input:not(:checked) + .popup__form-lable-text span {
+                color: #E31E24;
+            }
+            &-text{
+                @include text ($museo300, 13px, 15px, #0F0F10);
+
+            }
+        }
+        &-date{
+            width: 100%;
+            padding: 15px;
+            border: none;
+            border-radius: 43px;
+            
+        }
+        }
+
+
+    &__test{
+        width: 896px;
+        
+       
+        background: #FFFFFF;
+
+        display: flex;
+        .popup__form-lable-time{
+            display: flex;
+            align-items: center;
+            
+            
+        }
+    }
+    &__rent{
+        width: 896px;
+        // width: 100%;
+       
+        background: #FFFFFF;
+
+        display: flex;
+    }
+    
+   
+}

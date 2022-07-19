@@ -1,0 +1,65 @@
+.autos{
+    padding: 100px 0;
+    &__title{
+        @include font ($museo700, 35px, 96.5%, #0F0F10);
+        margin-bottom: 70px;
+    }
+    &__row{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    &__card{
+        width: calc(33.33333% - 13.33333px);
+        background: #FFFFFF;
+        box-shadow: 0px 9px 49px rgba(142, 136, 136, 0.16);
+        border-radius: 10px;
+
+        &-info{
+            padding: 33px 33px 37px 37px; 
+        }
+
+        &-title{
+        @include font ($museo700, 25px, 96.5%, #0F0F10);
+        margin-bottom: 30px;
+
+        }
+
+        &-btn{
+            margin-top: 33px;
+        }
+
+    }
+
+    &__list{
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    &__item{
+        display: flex;
+        align-items: center;
+
+        &-left{
+            display: flex;
+            align-items: center;
+            column-gap: 15px;
+            width: 65%;
+
+        }
+        &-info{
+            @include font ($museo700, 18px, 111%, #0F0F10);
+
+        }
+    }
+
+    &__btn{
+        margin-top: 60px;
+        white-space: nowrap;
+
+        &-center{
+            text-align: center;
+        }
+    }
+}

@@ -1,0 +1,47 @@
+@import "../fonts/museo/style.css";
+@import "mixins";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.container {
+    max-width: 1185px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+$museo700 : 'Museo Sans Rounded 700', sans-serif;
+$museo300 : 'Museo Sans Rounded 300', sans-serif;
+
+@mixin text ($ff, $fz, $lh, $c) {
+    font-family: $ff;
+    font-size: $fz;
+    line-height: $lh;
+    color: $c;
+  
+}
+
+
+
+
+@import "btn";
+@import "header";
+@import "home";
+@import "map";
+@import "products";
+@import "autos";
+@import "info";
+@import "overlay";
+@import "question";
+
+
+
+
+
+
+

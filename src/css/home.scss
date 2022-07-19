@@ -1,0 +1,51 @@
+.home{
+    padding: 210px 0 80px;
+    background: url(../image/homeBg.png) center/cover no-repeat ;
+    position: relative;
+    &::before{
+        content: '';
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(81.5deg, rgba(0, 0, 0, 0.584) 40.95%, rgba(0, 0, 0, 0) 99.79%);
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    &__title{
+        @include text ($museo700, 44px, 96.5%, #fff);
+    }
+    &__subtitle{
+        @include text($museo300, 22px, 24px, #fff);
+        margin: 20px 0 26px;
+    }
+    &__btns{
+        display: flex;
+        align-items: center;
+        column-gap: 46px;
+        margin-bottom: 183px;
+    }
+    &__row{
+        display: flex;
+        column-gap: 120px;
+        align-items: center;
+    }
+    &__card{
+        display: flex;
+        column-gap: 20px;
+        align-items: center;
+        &-text{
+            @include text ($museo300, 15px, 18px, #fff);
+        }
+    }
+}
+.home .container{
+    position: relative;
+    &::after{
+        content: url(../image/bmw.png);
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        max-width: 550px;
+    }
+}
